@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "53DF609DDAC2916F8B806A08840B22B05A96202F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "53DF609DDAC2916F8B806A08840B22B05A96202F" : 9223372036854775807,
+    "89DCBBBB6AD9D8459B2188644237B48700A75928" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "321DD39C-9A36-4276-9239-ED1653C25370",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "53DF609DDAC2916F8B806A08840B22B05A96202F" : "NinjaWarrior\/",
+    "89DCBBBB6AD9D8459B2188644237B48700A75928" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NinjaWarrior",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NinjaWarrior\/NinjaWarrior.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/annettefo\/NinjaWarrior.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53DF609DDAC2916F8B806A08840B22B05A96202F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/annettefo\/NinjaWarrior.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89DCBBBB6AD9D8459B2188644237B48700A75928"
+    }
+  ]
+}

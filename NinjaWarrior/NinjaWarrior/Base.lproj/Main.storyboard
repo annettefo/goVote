@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oel-J2-Ovy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="B8I-NL-yZ5">
+            <objects>
+                <viewController id="Oel-J2-Ovy" customClass="ViewController" customModule="NinjaWarrior" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LxG-NB-Q6k"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvq-o1-7hI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N88-DO-jeB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="flag3" translatesAutoresizingMaskIntoConstraints="NO" id="kn3-8p-Ysf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2P-Ve-KfL">
+                                <rect key="frame" x="172" y="438" width="30" height="30"/>
+                                <connections>
+                                    <action selector="rotatePic:" destination="Oel-J2-Ovy" eventType="touchUpInside" id="xRm-iU-003"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8II-x6-Dkv">
+                                <rect key="frame" x="67" y="120" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xsu-VM-G4A">
+                                <rect key="frame" x="51" y="198" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-Vy-BuO">
+                                <rect key="frame" x="59" y="401" width="256" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-Bq-nxm">
+                                <rect key="frame" x="83" y="560" width="209" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr0-uU-4h0">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="40"/>
+                                        <color key="backgroundColor" red="0.008114267779229422" green="0.059485286640406573" blue="0.31326121794871797" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pr0-uU-4h0" secondAttribute="height" multiplier="209:40" id="JXK-Sy-hyO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Ready to vote?">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="XFp-Ga-Uk3" kind="show" id="Rsk-aK-ndS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lvq-o1-7hI" firstAttribute="top" secondItem="Pr0-uU-4h0" secondAttribute="bottom" constant="67" id="4eD-lu-e4J"/>
+                            <constraint firstAttribute="bottom" secondItem="kn3-8p-Ysf" secondAttribute="bottom" id="Nwd-fO-sjG"/>
+                            <constraint firstItem="kn3-8p-Ysf" firstAttribute="top" secondItem="N88-DO-jeB" secondAttribute="top" id="UKc-Xc-8xd"/>
+                            <constraint firstItem="a2P-Ve-KfL" firstAttribute="centerX" secondItem="N88-DO-jeB" secondAttribute="centerX" id="Vkd-Xp-kBZ"/>
+                            <constraint firstItem="kn3-8p-Ysf" firstAttribute="leading" secondItem="N88-DO-jeB" secondAttribute="leading" id="WLk-BM-oaT"/>
+                            <constraint firstAttribute="trailing" secondItem="kn3-8p-Ysf" secondAttribute="trailing" id="l4t-SK-wgw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="donaldMessage" destination="7bO-Vy-BuO" id="pn6-93-F1J"/>
+                        <outlet property="donaldPic" destination="8II-x6-Dkv" id="wH4-nx-Mkt"/>
+                        <outlet property="donaldSuit" destination="Xsu-VM-G4A" id="nD4-YX-WKB"/>
+                        <outlet property="readyToVote" destination="Pr0-uU-4h0" id="xjm-kZ-5i4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qk8-JY-cTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605.60000000000002" y="-221.73913043478262"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VTc-6K-Y9R">
+            <objects>
+                <viewController id="XFp-Ga-Uk3" customClass="ViewController" customModule="NinjaWarrior" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6hX-ND-NVV"/>
+                        <viewControllerLayoutGuide type="bottom" id="n2e-Yn-SiL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WfK-kI-zGY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="flag3" translatesAutoresizingMaskIntoConstraints="NO" id="4Y9-iJ-3Og">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaH-Mb-ldq">
+                                <rect key="frame" x="158" y="629" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <segue destination="Oel-J2-Ovy" kind="show" id="Ftq-UY-U4J"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vote" translatesAutoresizingMaskIntoConstraints="NO" id="9HY-WY-VvM">
+                                <rect key="frame" x="3" y="94" width="183" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hilary" translatesAutoresizingMaskIntoConstraints="NO" id="xgz-aH-uFD">
+                                <rect key="frame" x="13" y="258" width="349" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vote2" translatesAutoresizingMaskIntoConstraints="NO" id="hP2-aT-TnO">
+                                <rect key="frame" x="5" y="422" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vote3" translatesAutoresizingMaskIntoConstraints="NO" id="488-Xf-nkd">
+                                <rect key="frame" x="220" y="422" width="142" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vote4" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-Tb-3oM">
+                                <rect key="frame" x="194" y="136" width="171" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Y9-iJ-3Og" firstAttribute="top" secondItem="WfK-kI-zGY" secondAttribute="top" id="Jq7-iC-sSq"/>
+                            <constraint firstItem="4Y9-iJ-3Og" firstAttribute="leading" secondItem="WfK-kI-zGY" secondAttribute="leading" id="gLo-OT-iup"/>
+                            <constraint firstAttribute="trailing" secondItem="4Y9-iJ-3Og" secondAttribute="trailing" id="nXs-Am-Up3"/>
+                            <constraint firstAttribute="bottom" secondItem="4Y9-iJ-3Og" secondAttribute="bottom" id="zRD-73-iYf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTB-xd-PKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1340" y="-365.66716641679164"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flag3" width="640" height="960"/>
+        <image name="hilary" width="1024" height="538"/>
+        <image name="vote" width="250" height="280"/>
+        <image name="vote2" width="1280" height="720"/>
+        <image name="vote3" width="800" height="800"/>
+        <image name="vote4" width="731" height="479"/>
+    </resources>
+</document>
